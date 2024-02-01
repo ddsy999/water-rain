@@ -18,7 +18,7 @@ $Y_{ij} = c+\alpha_i + e_{ij}$
 위의 model이 고정효과 모델이다. 
 
 > 이제 random effect model 이전에 다음과같은 Centralize technique를 짚고 넘어가자   
-처리가 1,2 두개가 있다고하면 $Y_{1j} = c+\alpha_1 + e_{1j}$ 와 $Y_{2j} = c+\alpha_2 + e_{2j}$ 두개가 있다고하고 $c=3$ 이라고 하고 $\alpha_1=1 , \alpha_2=-1$ 이라고 하자  이떄 이러한 Model은 다음과 완전히 동치이다 $c=0 , \alpha_1=4,\alpha_2=2$ 같은 model에 parameter가 이것도 되고 저것도 될수 있다는 것은 좀 부자연스럽다. 이러한 점이 생기는 이유는 아무런 parameter들에 제약조건이 없기 때문에 $c+\alpha_1=\alpha_1$으로 생각해도 되기 때문이다.   
+처리가 1,2 두개가 있다고하면 $Y_{1j} = c+\alpha_1 + e_{1j}$ 와 $Y_{2j} = c+\alpha_2 + e_{2j}$ 두개가 있다고하고 $c=3$ 이라고 하고 $\alpha_1=1 , \alpha_2=-1$ 이라고 하자  이떄 이러한 Model은 다음과 완전히 동치이다 $c=0 , \alpha_1=4,\alpha_2=2$ 같은 model에 parameter가 이것도 되고 저것도 될수 있다는 것은 좀 부자연스럽다. 이러한 점이 생기는 이유는 아무런 parameter들에 제약조건 contraint 이 없기 때문에 $c+\alpha_1=\alpha_1$으로 생각해도 되기 때문이다.   
 따라서 그냥 $c$가 없는 model : $Y_{1j} = \alpha_1 + e_{1j}$ 와 $Y_{2j} =\alpha_2 + e_{2j}$ 에서 $Y_{1j} = 4+ e_{1j}$ , $Y_{2j} = 2 + e_{2j}$ 이라고 해도된다. 평균 $c$값이 필요없는것이다. 그러나 효과들을 평균값을 일부러 상수로 빼서 $c=3$으로 빼고 $\sum_i\alpha_i=0$으로 Centralize하는 technique이 존재한다. 그리고 이러한 방법은 필수적인것은 아니지만 효과들의 상수 값은 차이만 중요하다는 걸로 인식해도된다. 상수차이는 어떻게든 뺄수있다는 것이다. 
 
 
